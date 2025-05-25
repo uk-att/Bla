@@ -9,5 +9,8 @@ flows:
     author: anonymous, created: 1747905992406, flowName: GGG, flowDesc: gfdg}
   8f2c8c00-bcbb-40e0-8999-092335b754ed: {ver: 1, file: aaa.snapshot, comments: sdsad,
     author: anonymous, created: 1747906185817, flowName: aaa, flowDesc: dsd}
+  5309f6c3-8563-4ead-adea-001bc3a7b68e: {ver: 1, file: MyGroup.snapshot, comments: '',
+    author: anonymous, created: 1748171952119, flowName: MyGroup, flowDesc: read from
+      CSV to DB}
 layoutVer: 1
 bucketId: d60e635d-2d06-4fab-8aa4-e57bd1a820c3
