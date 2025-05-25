@@ -10,54 +10,21 @@
         "componentType" : "PROCESS_GROUP",
         "connections" : [ {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
+          "backPressureObjectThreshold" : 100,
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "3f94d2dc-6437-32d7-af57-aa5359241866",
-            "id" : "e90b2270-0196-1000-fdc3-082fdb0ed977",
-            "instanceIdentifier" : "894c0e78-0c6a-3e7e-1662-fa881dc21c64",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "3f94d2dc-6437-32d7-af57-aa5359241866",
-          "identifier" : "e90b2272-0196-1000-28dd-303c94d3ba89",
-          "instanceIdentifier" : "ae501229-1d25-3e5f-03b4-e0c7ff296ac6",
-          "labelIndex" : 0,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success", "failure", "retry" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "3f94d2dc-6437-32d7-af57-aa5359241866",
+            "groupId" : "5c162e7c-9795-393f-8568-30f14707237c",
             "id" : "e90b226f-0196-1000-53ff-49d60c2736f2",
-            "instanceIdentifier" : "999c0c42-fd29-3ed4-5a4d-67d181d7bcde",
-            "name" : "PutDatabaseRecord",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 2
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "3f94d2dc-6437-32d7-af57-aa5359241866",
-            "id" : "e90b226f-0196-1000-53ff-49d60c2736f2",
-            "instanceIdentifier" : "999c0c42-fd29-3ed4-5a4d-67d181d7bcde",
+            "instanceIdentifier" : "5b76bd13-dff5-35fd-4b27-d6937e47502d",
             "name" : "PutDatabaseRecord",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "3f94d2dc-6437-32d7-af57-aa5359241866",
+          "groupIdentifier" : "5c162e7c-9795-393f-8568-30f14707237c",
           "identifier" : "e90b2271-0196-1000-a061-926478ac0412",
-          "instanceIdentifier" : "ee9a3398-a4e6-3c1c-786c-afded547d45f",
+          "instanceIdentifier" : "caa502a4-e6e4-3677-1157-81b578ac3bdd",
           "labelIndex" : 0,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -67,13 +34,46 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "3f94d2dc-6437-32d7-af57-aa5359241866",
+            "groupId" : "5c162e7c-9795-393f-8568-30f14707237c",
             "id" : "e90b226e-0196-1000-bc91-43ccdd8b6e7d",
-            "instanceIdentifier" : "4d4394c2-4ac4-31d0-843c-c4c70255e32d",
+            "instanceIdentifier" : "a9cad32a-d249-36ac-52e2-d573d665c428",
             "name" : "GetFile",
             "type" : "PROCESSOR"
           },
           "zIndex" : 1
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 100,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "5c162e7c-9795-393f-8568-30f14707237c",
+            "id" : "e90b2270-0196-1000-fdc3-082fdb0ed977",
+            "instanceIdentifier" : "2233087f-8dde-3ea4-6b99-4e720066ce34",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "5c162e7c-9795-393f-8568-30f14707237c",
+          "identifier" : "e90b2272-0196-1000-28dd-303c94d3ba89",
+          "instanceIdentifier" : "aeab56ba-d18d-34ac-8e89-51f4e13a8a63",
+          "labelIndex" : 0,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure", "success", "retry" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "5c162e7c-9795-393f-8568-30f14707237c",
+            "id" : "e90b226f-0196-1000-53ff-49d60c2736f2",
+            "instanceIdentifier" : "5b76bd13-dff5-35fd-4b27-d6937e47502d",
+            "name" : "PutDatabaseRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 2
         } ],
         "controllerServices" : [ {
           "bulletinLevel" : "WARN",
@@ -92,9 +92,9 @@
             },
             "type" : "org.apache.nifi.serialization.RecordReaderFactory"
           } ],
-          "groupIdentifier" : "3f94d2dc-6437-32d7-af57-aa5359241866",
+          "groupIdentifier" : "5c162e7c-9795-393f-8568-30f14707237c",
           "identifier" : "88fc68e2-46df-3efb-a57d-c94a20af57b7",
-          "instanceIdentifier" : "8f2cfd2b-d7b1-39dc-0589-f93155c1ac06",
+          "instanceIdentifier" : "b3cd0af7-16d0-37a2-a7ae-83d3188ef39d",
           "name" : "CSVReader",
           "properties" : {
             "ignore-csv-header" : "false",
@@ -302,9 +302,9 @@
             },
             "type" : "org.apache.nifi.dbcp.DBCPService"
           } ],
-          "groupIdentifier" : "3f94d2dc-6437-32d7-af57-aa5359241866",
+          "groupIdentifier" : "5c162e7c-9795-393f-8568-30f14707237c",
           "identifier" : "98f375bd-82d8-3738-8541-7c9400f299fd",
-          "instanceIdentifier" : "06718484-0d4f-3838-8e37-6072dd61d58b",
+          "instanceIdentifier" : "36959abc-a872-3ca1-be27-115c66a4a310",
           "name" : "DBCPConnectionPool",
           "properties" : {
             "dbcp-min-idle-conns" : "0",
@@ -412,7 +412,7 @@
               "name" : "database-driver-locations",
               "resourceDefinition" : {
                 "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "DIRECTORY", "FILE", "URL" ]
+                "resourceTypes" : [ "DIRECTORY", "URL", "FILE" ]
               },
               "sensitive" : false
             },
@@ -442,24 +442,24 @@
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ {
           "componentType" : "FUNNEL",
-          "groupIdentifier" : "3f94d2dc-6437-32d7-af57-aa5359241866",
+          "groupIdentifier" : "5c162e7c-9795-393f-8568-30f14707237c",
           "identifier" : "e90b2270-0196-1000-fdc3-082fdb0ed977",
-          "instanceIdentifier" : "894c0e78-0c6a-3e7e-1662-fa881dc21c64",
+          "instanceIdentifier" : "2233087f-8dde-3ea4-6b99-4e720066ce34",
           "position" : {
             "x" : 346.0,
             "y" : 115.0
           }
         } ],
-        "identifier" : "3f94d2dc-6437-32d7-af57-aa5359241866",
+        "identifier" : "5c162e7c-9795-393f-8568-30f14707237c",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "0724d624-0197-1000-3025-15af83237baf",
+        "instanceIdentifier" : "07357b4b-0197-1000-cff3-715674637253",
         "labels" : [ ],
         "maxConcurrentTasks" : 1,
         "name" : "MyGroup",
         "outputPorts" : [ ],
         "position" : {
-          "x" : -88.0,
-          "y" : -168.8000030517578
+          "x" : -248.0,
+          "y" : -160.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -475,9 +475,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "3f94d2dc-6437-32d7-af57-aa5359241866",
+          "groupIdentifier" : "5c162e7c-9795-393f-8568-30f14707237c",
           "identifier" : "e90b226f-0196-1000-53ff-49d60c2736f2",
-          "instanceIdentifier" : "999c0c42-fd29-3ed4-5a4d-67d181d7bcde",
+          "instanceIdentifier" : "5b76bd13-dff5-35fd-4b27-d6937e47502d",
           "maxBackoffPeriod" : "10 mins",
           "name" : "PutDatabaseRecord",
           "penaltyDuration" : "30 sec",
@@ -719,9 +719,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "3f94d2dc-6437-32d7-af57-aa5359241866",
+          "groupIdentifier" : "5c162e7c-9795-393f-8568-30f14707237c",
           "identifier" : "e90b226e-0196-1000-bc91-43ccdd8b6e7d",
-          "instanceIdentifier" : "4d4394c2-4ac4-31d0-843c-c4c70255e32d",
+          "instanceIdentifier" : "a9cad32a-d249-36ac-52e2-d573d665c428",
           "maxBackoffPeriod" : "10 mins",
           "name" : "GetFile",
           "penaltyDuration" : "30 sec",
@@ -733,7 +733,7 @@
             "Keep Source File" : "true",
             "Minimum File Age" : "0 sec",
             "Polling Interval" : "0 sec",
-            "Input Directory" : "/tmp",
+            "Input Directory" : "/opt/nifi/nifi-current/input_data_files",
             "Batch Size" : "10",
             "Minimum File Size" : "0 B",
             "Ignore Hidden Files" : "true",
