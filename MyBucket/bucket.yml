@@ -1,8 +1,8 @@
 flows:
   2195f5d3-aab1-448f-872a-0553c8fc63ba: {ver: 1, file: BBBB.snapshot, comments: fdsfdsf,
     author: anonymous, created: 1747905335876, flowName: BBBB, flowDesc: fdsf}
-  d2b06353-134d-4068-a28d-92ec77b1a5f6: {ver: 2, file: SDBValidation.snapshot, comments: Add
-      changes, author: anonymous, created: 1749571952390, flowName: SDBValidation,
+  d2b06353-134d-4068-a28d-92ec77b1a5f6: {ver: 3, file: SDBValidation.snapshot, comments: add
+      duration to log, author: anonymous, created: 1749998673656, flowName: SDBValidation,
     flowDesc: ''}
   ba3f2cde-dd81-43ff-8953-7fb0bcf19b8d: {ver: 1, file: aaaaa.snapshot, comments: dfdsf,
     author: anonymous, created: 1747906135771, flowName: aaaaa, flowDesc: dssdf}
