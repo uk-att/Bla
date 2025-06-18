@@ -517,39 +517,6 @@
           "destination" : {
             "comments" : "",
             "groupId" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
-            "id" : "731319f3-0197-1000-ce30-dfd41e96a780",
-            "instanceIdentifier" : "3b854a74-403d-3f2a-8339-00e34ec6081f",
-            "name" : "calculate insert time",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
-          "identifier" : "4e7296aa-a460-3d09-98f7-423491329ac6",
-          "instanceIdentifier" : "73151225-0197-1000-a73f-6322c0849879",
-          "labelIndex" : 0,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
-            "id" : "f2204a3d-0741-3b99-b1b0-61b226de6053",
-            "instanceIdentifier" : "5479d94f-0197-1000-1c62-d2d31146b818",
-            "name" : "insert validation results",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 34
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
             "id" : "c2bb9056-72ac-3c0f-aa9f-00c887604fc2",
             "instanceIdentifier" : "500d522d-0197-1000-ee62-b6245dad3300",
             "name" : "Funnel",
@@ -674,6 +641,72 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 13
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
+            "id" : "731319f3-0197-1000-ce30-dfd41e96a780",
+            "instanceIdentifier" : "3b854a74-403d-3f2a-8339-00e34ec6081f",
+            "name" : "calculate insert time",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
+          "identifier" : "0208493b-1d79-3227-835b-f96d116ee43e",
+          "instanceIdentifier" : "7d052d8c-0197-1000-d59a-5476b9e597b1",
+          "labelIndex" : 0,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
+            "id" : "f2204a3d-0741-3b99-b1b0-61b226de6053",
+            "instanceIdentifier" : "5479d94f-0197-1000-1c62-d2d31146b818",
+            "name" : "insert validation results",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 40
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
+            "id" : "73f56304-0197-1000-994e-21bcc15bdbf0",
+            "instanceIdentifier" : "c2b0653a-3bdb-3008-eb28-287ee7dfc796",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
+          "identifier" : "818fb100-995a-378b-8d16-918f7c2b73cd",
+          "instanceIdentifier" : "7d056631-0197-1000-a2c8-c56adf3a0e54",
+          "labelIndex" : 0,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure", "retry" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
+            "id" : "f2204a3d-0741-3b99-b1b0-61b226de6053",
+            "instanceIdentifier" : "5479d94f-0197-1000-1c62-d2d31146b818",
+            "name" : "insert validation results",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 41
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
@@ -841,7 +874,7 @@
           "zIndex" : 2
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
+          "backPressureObjectThreshold" : 1,
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -872,39 +905,6 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 33
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
-            "id" : "73f56304-0197-1000-994e-21bcc15bdbf0",
-            "instanceIdentifier" : "c2b0653a-3bdb-3008-eb28-287ee7dfc796",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
-          "identifier" : "6cc72f5d-45fa-3627-8a59-c2fe8e83ba2a",
-          "instanceIdentifier" : "5481d02f-0197-1000-d096-8788d6c343d2",
-          "labelIndex" : 0,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure", "retry" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "a902e036-bc54-3543-ab8c-e267a0a9f975",
-            "id" : "f2204a3d-0741-3b99-b1b0-61b226de6053",
-            "instanceIdentifier" : "5479d94f-0197-1000-1c62-d2d31146b818",
-            "name" : "insert validation results",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 21
         } ],
         "controllerServices" : [ {
           "bulletinLevel" : "WARN",
@@ -1290,7 +1290,7 @@
               "name" : "database-driver-locations",
               "resourceDefinition" : {
                 "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "DIRECTORY", "FILE", "URL" ]
+                "resourceTypes" : [ "URL", "FILE", "DIRECTORY" ]
               },
               "sensitive" : false
             },
@@ -1354,8 +1354,8 @@
         "name" : "SDB Validation",
         "outputPorts" : [ ],
         "position" : {
-          "x" : -496.0,
-          "y" : -416.0
+          "x" : -672.0,
+          "y" : -600.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -1378,7 +1378,7 @@
           "name" : "Split to handle one validation",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -1285.5838623046875,
+            "x" : -1293.5009155273438,
             "y" : -1096.0
           },
           "properties" : {
@@ -1446,7 +1446,7 @@
           "name" : "get required attributes",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -1296.0,
+            "x" : -1303.9170532226562,
             "y" : -640.0
           },
           "properties" : {
@@ -1626,7 +1626,7 @@
           "name" : "LogMessage",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 392.0,
+            "x" : 381.44390869140625,
             "y" : -928.0
           },
           "properties" : {
@@ -1685,7 +1685,7 @@
           "name" : "calculate insert time",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 440.0,
+            "x" : 429.44390869140625,
             "y" : -616.0
           },
           "properties" : {
@@ -1759,13 +1759,13 @@
           "name" : "start measure start time",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 64.0,
+            "x" : 53.44390869140625,
             "y" : -504.0
           },
           "properties" : {
             "start_time" : "${now():toNumber()}",
             "Store State" : "Do not store state",
-            "canonical-value-lookup-cache-size" : "100"
+            "canonical-value-lookup-cache-size" : "1"
           },
           "propertyDescriptors" : {
             "start_time" : {
@@ -1885,13 +1885,13 @@
           "name" : "insert validation results",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 256.0,
-            "y" : -192.0
+            "x" : 96.0,
+            "y" : -64.0
           },
           "properties" : {
             "Support Fragmented Transactions" : "false",
             "putsql-sql-statement" : "insert into dap.sdb1.etl_validations_log (task_id, chunk_id, record, original_record, \"table\" , validation_id, severity)\nselect\n\tnull as task_id,\t\t\t\n\tnull as chunk_id,\n\tcast(s.ctid as text) as \"record\",\t\t\t\n\tnull as original_record,\t\t\n\t'${r_table}' as \"table\", \t\n\t'${validation_id}' as validation_id,\n\t1 as severity\nfrom ${r_table} s\nwhere ${sql_code}",
-            "Batch Size" : "100",
+            "Batch Size" : "1",
             "Obtain Generated Keys" : "false",
             "JDBC Connection Pool" : "32b3abdf-537f-374a-83f7-e2be18c34103",
             "database-session-autocommit" : "true",
@@ -2043,7 +2043,7 @@
           "name" : "decide if validation exists",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -552.0,
+            "x" : -559.9170532226562,
             "y" : -512.0
           },
           "properties" : {
@@ -2101,7 +2101,7 @@
           "instanceIdentifier" : "4fb76287-0197-1000-07c7-3a9c7bf0eb50",
           "maxBackoffPeriod" : "10 mins",
           "name" : "Get All Validations",
-          "penaltyDuration" : "1 day",
+          "penaltyDuration" : "30 sec",
           "position" : {
             "x" : -781.5838623046875,
             "y" : -1320.0
@@ -2236,7 +2236,7 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
-          "yieldDuration" : "1 day"
+          "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
@@ -2257,7 +2257,7 @@
           "name" : "read validation result",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -1304.0,
+            "x" : -1311.9170532226562,
             "y" : 16.0
           },
           "properties" : {
@@ -2421,7 +2421,7 @@
           "name" : "check validation not exists in log table",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -1296.0,
+            "x" : -1303.9170532226562,
             "y" : -416.0
           },
           "properties" : {
@@ -2575,7 +2575,7 @@
           "name" : "LogMessage",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -416.0,
+            "x" : -423.91705322265625,
             "y" : -288.0
           },
           "properties" : {
@@ -2634,7 +2634,7 @@
           "name" : "from AVRO to JSON",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -1293.5838623046875,
+            "x" : -1301.5009155273438,
             "y" : -848.0
           },
           "properties" : {
@@ -2694,7 +2694,7 @@
           "name" : "from avro to json",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -1296.0,
+            "x" : -1303.9170532226562,
             "y" : -208.0
           },
           "properties" : {

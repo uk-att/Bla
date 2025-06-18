@@ -1,6 +1,6 @@
 flows:
-  d2b06353-134d-4068-a28d-92ec77b1a5f6: {ver: 3, file: SDBValidation.snapshot, comments: add
-      duration to log, author: anonymous, created: 1749998673656, flowName: SDBValidation,
+  d2b06353-134d-4068-a28d-92ec77b1a5f6: {ver: 4, file: SDBValidation.snapshot, comments: back
+      to PutSql, author: anonymous, created: 1750233617805, flowName: SDBValidation,
     flowDesc: ''}
 layoutVer: 1
 bucketId: d60e635d-2d06-4fab-8aa4-e57bd1a820c3
