@@ -6,8 +6,5 @@ flows:
     author: anonymous, created: 1747906135771, flowName: aaaaa, flowDesc: dssdf}
   aa93238d-3559-49c5-a4e7-5d3720f208a2: {ver: 1, file: RRRR.snapshot, comments: '',
     author: anonymous, created: 1748264981712, flowName: RRRR, flowDesc: ''}
-  5309f6c3-8563-4ead-adea-001bc3a7b68e: {ver: 2, file: MyGroup.snapshot, comments: make
-      it work from csv to DB, author: anonymous, created: 1748173480262, flowName: MyGroup,
-    flowDesc: read from CSV to DB}
 layoutVer: 1
 bucketId: d60e635d-2d06-4fab-8aa4-e57bd1a820c3
