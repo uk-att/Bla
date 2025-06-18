@@ -8,12 +8,10 @@ flows:
     author: anonymous, created: 1747906135771, flowName: aaaaa, flowDesc: dssdf}
   9eba09ed-c741-4209-8a8d-4a876e398aa0: {ver: 1, file: GGGG.snapshot, comments: fdsfds,
     author: anonymous, created: 1747905659841, flowName: GGGG, flowDesc: fdsf}
-  3a5532b3-e109-423f-b46d-17a285d90c9e: {ver: 1, file: GGG.snapshot, comments: gffdg,
-    author: anonymous, created: 1747905992406, flowName: GGG, flowDesc: gfdg}
   aa93238d-3559-49c5-a4e7-5d3720f208a2: {ver: 1, file: RRRR.snapshot, comments: '',
     author: anonymous, created: 1748264981712, flowName: RRRR, flowDesc: ''}
-  8f2c8c00-bcbb-40e0-8999-092335b754ed: {ver: 1, file: aaa.snapshot, comments: sdsad,
-    author: anonymous, created: 1747906185817, flowName: aaa, flowDesc: dsd}
+  3a5532b3-e109-423f-b46d-17a285d90c9e: {ver: 1, file: GGG.snapshot, comments: gffdg,
+    author: anonymous, created: 1747905992406, flowName: GGG, flowDesc: gfdg}
   5309f6c3-8563-4ead-adea-001bc3a7b68e: {ver: 2, file: MyGroup.snapshot, comments: make
       it work from csv to DB, author: anonymous, created: 1748173480262, flowName: MyGroup,
     flowDesc: read from CSV to DB}
