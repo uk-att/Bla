@@ -19,7 +19,7 @@
         "funnels" : [ ],
         "identifier" : "21275885-6746-306b-9f91-3b501db2777e",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "97b56154-0197-1000-ee13-eb86cf0f3e5a",
+        "instanceIdentifier" : "6d232c3b-44d4-3cf2-0101-93de4c2e640f",
         "labels" : [ ],
         "maxConcurrentTasks" : 1,
         "name" : "Location",
@@ -40,26 +40,26 @@
               "comments" : "",
               "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
               "id" : "7f859d01-473d-3e42-98e7-d4b92639de7a",
-              "instanceIdentifier" : "97d6561a-0197-1000-c852-0e909250a115",
+              "instanceIdentifier" : "e77dcca1-8d58-3b12-4649-f4f1e8841426",
               "name" : "Funnel",
               "type" : "FUNNEL"
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
             "identifier" : "89720227-be0a-398d-ac41-75d727e4f86d",
-            "instanceIdentifier" : "9cbe417b-0197-1000-b3d7-aa7615d2da1d",
+            "instanceIdentifier" : "6a1a5cb9-2a45-3f2b-16f1-93eeccfb41b7",
             "labelIndex" : 0,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
             "name" : "",
             "partitioningAttribute" : "",
             "prioritizers" : [ ],
-            "selectedRelationships" : [ "failure", "success" ],
+            "selectedRelationships" : [ "success", "failure" ],
             "source" : {
               "comments" : "",
               "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
               "id" : "1387bb8e-372d-3078-b22a-088e8f743cea",
-              "instanceIdentifier" : "9cbe06fb-0197-1000-5d47-468b0b42f2b4",
+              "instanceIdentifier" : "1ff88f28-2c81-35af-70ef-ded43ae723df",
               "name" : "HandleHttpResponse",
               "type" : "PROCESSOR"
             },
@@ -73,14 +73,14 @@
               "comments" : "",
               "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
               "id" : "1387bb8e-372d-3078-b22a-088e8f743cea",
-              "instanceIdentifier" : "9cbe06fb-0197-1000-5d47-468b0b42f2b4",
+              "instanceIdentifier" : "1ff88f28-2c81-35af-70ef-ded43ae723df",
               "name" : "HandleHttpResponse",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
             "identifier" : "85f4e5b1-59f5-3c4a-be93-b7fa1540bb7a",
-            "instanceIdentifier" : "9cd3224e-0197-1000-fd91-26c34cefe3b1",
+            "instanceIdentifier" : "de6157d9-3f29-3c04-6ec8-3b0ffaec78d6",
             "labelIndex" : 0,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -92,7 +92,7 @@
               "comments" : "",
               "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
               "id" : "bccc08f5-e319-3ffe-8ef9-a3b7c9935400",
-              "instanceIdentifier" : "9cd28053-0197-1000-249e-12af4398e8dc",
+              "instanceIdentifier" : "9ebd3107-5dd0-3120-a281-ad13f25f9fe7",
               "name" : "LogAttribute",
               "type" : "PROCESSOR"
             },
@@ -106,14 +106,14 @@
               "comments" : "",
               "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
               "id" : "bccc08f5-e319-3ffe-8ef9-a3b7c9935400",
-              "instanceIdentifier" : "9cd28053-0197-1000-249e-12af4398e8dc",
+              "instanceIdentifier" : "9ebd3107-5dd0-3120-a281-ad13f25f9fe7",
               "name" : "LogAttribute",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
             "identifier" : "245902de-0539-30e3-ac97-c30f907ccdb0",
-            "instanceIdentifier" : "9cd2f923-0197-1000-0e98-e204106c24e8",
+            "instanceIdentifier" : "5731cc11-a2d1-3095-ee5f-5923dd870eff",
             "labelIndex" : 0,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -125,7 +125,7 @@
               "comments" : "",
               "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
               "id" : "b87fe07e-2654-3d7e-b2e9-73643f5d5009",
-              "instanceIdentifier" : "97d07b3a-0197-1000-64fd-a9495da879ef",
+              "instanceIdentifier" : "37675bf4-efe0-37d8-b86d-fc0d244235f9",
               "name" : "HandleHttpRequest",
               "type" : "PROCESSOR"
             },
@@ -150,7 +150,7 @@
             } ],
             "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
             "identifier" : "52fc0b22-65c2-3f63-9927-96531f4fa112",
-            "instanceIdentifier" : "97d5383b-0197-1000-0190-21e4ffdbf38f",
+            "instanceIdentifier" : "c2a42f92-7026-3d5b-2429-16651384f85c",
             "name" : "StandardHttpContextMap",
             "properties" : {
               "Request Expiration" : "1 min",
@@ -185,7 +185,7 @@
             "componentType" : "FUNNEL",
             "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
             "identifier" : "7f859d01-473d-3e42-98e7-d4b92639de7a",
-            "instanceIdentifier" : "97d6561a-0197-1000-c852-0e909250a115",
+            "instanceIdentifier" : "e77dcca1-8d58-3b12-4649-f4f1e8841426",
             "position" : {
               "x" : -216.0,
               "y" : 168.0
@@ -194,7 +194,7 @@
           "groupIdentifier" : "21275885-6746-306b-9f91-3b501db2777e",
           "identifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
           "inputPorts" : [ ],
-          "instanceIdentifier" : "97cac1c5-0197-1000-d106-31d776becf23",
+          "instanceIdentifier" : "695f6aec-eff1-308d-59ed-d19de0c3b699",
           "labels" : [ ],
           "maxConcurrentTasks" : 1,
           "name" : "Granite",
@@ -219,13 +219,13 @@
             "executionNode" : "ALL",
             "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
             "identifier" : "1387bb8e-372d-3078-b22a-088e8f743cea",
-            "instanceIdentifier" : "9cbe06fb-0197-1000-5d47-468b0b42f2b4",
+            "instanceIdentifier" : "1ff88f28-2c81-35af-70ef-ded43ae723df",
             "maxBackoffPeriod" : "10 mins",
             "name" : "HandleHttpResponse",
             "penaltyDuration" : "30 sec",
             "position" : {
-              "x" : 496.0,
-              "y" : 56.0
+              "x" : 424.0,
+              "y" : -144.0
             },
             "properties" : {
               "HTTP Context Map" : "52fc0b22-65c2-3f63-9927-96531f4fa112",
@@ -278,13 +278,13 @@
             "executionNode" : "ALL",
             "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
             "identifier" : "bccc08f5-e319-3ffe-8ef9-a3b7c9935400",
-            "instanceIdentifier" : "9cd28053-0197-1000-249e-12af4398e8dc",
+            "instanceIdentifier" : "9ebd3107-5dd0-3120-a281-ad13f25f9fe7",
             "maxBackoffPeriod" : "10 mins",
             "name" : "LogAttribute",
             "penaltyDuration" : "30 sec",
             "position" : {
-              "x" : -224.0,
-              "y" : -56.0
+              "x" : -264.0,
+              "y" : -112.0
             },
             "properties" : {
               "Log prefix" : "request-received",
@@ -391,17 +391,16 @@
             "executionNode" : "ALL",
             "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
             "identifier" : "b87fe07e-2654-3d7e-b2e9-73643f5d5009",
-            "instanceIdentifier" : "97d07b3a-0197-1000-64fd-a9495da879ef",
+            "instanceIdentifier" : "37675bf4-efe0-37d8-b86d-fc0d244235f9",
             "maxBackoffPeriod" : "10 mins",
             "name" : "HandleHttpRequest",
             "penaltyDuration" : "30 sec",
             "position" : {
-              "x" : -240.0,
-              "y" : -272.0
+              "x" : -272.0,
+              "y" : -376.0
             },
             "properties" : {
               "multipart-request-max-size" : "1 MB",
-              "parameters-to-attributes" : "taskId",
               "Allow POST" : "true",
               "Hostname" : "0.0.0.0",
               "Default URL Character Set" : "UTF-8",
