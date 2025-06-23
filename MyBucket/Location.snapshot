@@ -46,8 +46,74 @@
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
-            "identifier" : "0a8ceb64-0e6e-32e5-b79d-e0d7a74ed1ff",
-            "instanceIdentifier" : "97d66911-0197-1000-5942-20d14f6ce50c",
+            "identifier" : "89720227-be0a-398d-ac41-75d727e4f86d",
+            "instanceIdentifier" : "9cbe417b-0197-1000-b3d7-aa7615d2da1d",
+            "labelIndex" : 0,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "failure", "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
+              "id" : "1387bb8e-372d-3078-b22a-088e8f743cea",
+              "instanceIdentifier" : "9cbe06fb-0197-1000-5d47-468b0b42f2b4",
+              "name" : "HandleHttpResponse",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 3
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
+              "id" : "1387bb8e-372d-3078-b22a-088e8f743cea",
+              "instanceIdentifier" : "9cbe06fb-0197-1000-5d47-468b0b42f2b4",
+              "name" : "HandleHttpResponse",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
+            "identifier" : "85f4e5b1-59f5-3c4a-be93-b7fa1540bb7a",
+            "instanceIdentifier" : "9cd3224e-0197-1000-fd91-26c34cefe3b1",
+            "labelIndex" : 0,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
+              "id" : "bccc08f5-e319-3ffe-8ef9-a3b7c9935400",
+              "instanceIdentifier" : "9cd28053-0197-1000-249e-12af4398e8dc",
+              "name" : "LogAttribute",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 5
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "c0162ace-5cd9-3004-9331-f857613596b0",
+              "id" : "bccc08f5-e319-3ffe-8ef9-a3b7c9935400",
+              "instanceIdentifier" : "9cd28053-0197-1000-249e-12af4398e8dc",
+              "name" : "LogAttribute",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
+            "identifier" : "245902de-0539-30e3-ac97-c30f907ccdb0",
+            "instanceIdentifier" : "9cd2f923-0197-1000-0e98-e204106c24e8",
             "labelIndex" : 0,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -63,7 +129,7 @@
               "name" : "HandleHttpRequest",
               "type" : "PROCESSOR"
             },
-            "zIndex" : 1
+            "zIndex" : 4
           } ],
           "controllerServices" : [ {
             "bulletinLevel" : "WARN",
@@ -121,8 +187,8 @@
             "identifier" : "7f859d01-473d-3e42-98e7-d4b92639de7a",
             "instanceIdentifier" : "97d6561a-0197-1000-c852-0e909250a115",
             "position" : {
-              "x" : -240.0,
-              "y" : 80.0
+              "x" : -216.0,
+              "y" : 168.0
             }
           } ],
           "groupIdentifier" : "21275885-6746-306b-9f91-3b501db2777e",
@@ -134,11 +200,183 @@
           "name" : "Granite",
           "outputPorts" : [ ],
           "position" : {
-            "x" : -376.0,
-            "y" : -288.0
+            "x" : -384.0,
+            "y" : -448.0
           },
           "processGroups" : [ ],
           "processors" : [ {
+            "autoTerminatedRelationships" : [ ],
+            "backoffMechanism" : "PENALIZE_FLOWFILE",
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "2.4.0"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
+            "identifier" : "1387bb8e-372d-3078-b22a-088e8f743cea",
+            "instanceIdentifier" : "9cbe06fb-0197-1000-5d47-468b0b42f2b4",
+            "maxBackoffPeriod" : "10 mins",
+            "name" : "HandleHttpResponse",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 496.0,
+              "y" : 56.0
+            },
+            "properties" : {
+              "HTTP Context Map" : "52fc0b22-65c2-3f63-9927-96531f4fa112",
+              "HTTP Status Code" : "200"
+            },
+            "propertyDescriptors" : {
+              "HTTP Context Map" : {
+                "displayName" : "HTTP Context Map",
+                "dynamic" : false,
+                "identifiesControllerService" : true,
+                "name" : "HTTP Context Map",
+                "sensitive" : false
+              },
+              "Attributes to add to the HTTP Response (Regex)" : {
+                "displayName" : "Attributes to add to the HTTP Response (Regex)",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "Attributes to add to the HTTP Response (Regex)",
+                "sensitive" : false
+              },
+              "HTTP Status Code" : {
+                "displayName" : "HTTP Status Code",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "HTTP Status Code",
+                "sensitive" : false
+              }
+            },
+            "retriedRelationships" : [ ],
+            "retryCount" : 10,
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.HandleHttpResponse",
+            "yieldDuration" : "1 sec"
+          }, {
+            "autoTerminatedRelationships" : [ ],
+            "backoffMechanism" : "PENALIZE_FLOWFILE",
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "2.4.0"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "c0162ace-5cd9-3004-9331-f857613596b0",
+            "identifier" : "bccc08f5-e319-3ffe-8ef9-a3b7c9935400",
+            "instanceIdentifier" : "9cd28053-0197-1000-249e-12af4398e8dc",
+            "maxBackoffPeriod" : "10 mins",
+            "name" : "LogAttribute",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : -224.0,
+              "y" : -56.0
+            },
+            "properties" : {
+              "Log prefix" : "request-received",
+              "character-set" : "UTF-8",
+              "Log FlowFile Properties" : "true",
+              "Log Level" : "info",
+              "attributes-to-log-regex" : ".*",
+              "Output Format" : "Line per Attribute",
+              "Log Payload" : "false"
+            },
+            "propertyDescriptors" : {
+              "Log prefix" : {
+                "displayName" : "Log prefix",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "Log prefix",
+                "sensitive" : false
+              },
+              "character-set" : {
+                "displayName" : "Character Set",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "character-set",
+                "sensitive" : false
+              },
+              "Log FlowFile Properties" : {
+                "displayName" : "Log FlowFile Properties",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "Log FlowFile Properties",
+                "sensitive" : false
+              },
+              "Log Level" : {
+                "displayName" : "Log Level",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "Log Level",
+                "sensitive" : false
+              },
+              "attributes-to-ignore-regex" : {
+                "displayName" : "Attributes to Ignore by Regular Expression",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "attributes-to-ignore-regex",
+                "sensitive" : false
+              },
+              "Attributes to Ignore" : {
+                "displayName" : "Attributes to Ignore",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "Attributes to Ignore",
+                "sensitive" : false
+              },
+              "Attributes to Log" : {
+                "displayName" : "Attributes to Log",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "Attributes to Log",
+                "sensitive" : false
+              },
+              "attributes-to-log-regex" : {
+                "displayName" : "Attributes to Log by Regular Expression",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "attributes-to-log-regex",
+                "sensitive" : false
+              },
+              "Output Format" : {
+                "displayName" : "Output Format",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "Output Format",
+                "sensitive" : false
+              },
+              "Log Payload" : {
+                "displayName" : "Log Payload",
+                "dynamic" : false,
+                "identifiesControllerService" : false,
+                "name" : "Log Payload",
+                "sensitive" : false
+              }
+            },
+            "retriedRelationships" : [ ],
+            "retryCount" : 10,
+            "runDurationMillis" : 25,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.LogAttribute",
+            "yieldDuration" : "1 sec"
+          }, {
             "autoTerminatedRelationships" : [ ],
             "backoffMechanism" : "PENALIZE_FLOWFILE",
             "bulletinLevel" : "WARN",
@@ -158,13 +396,14 @@
             "name" : "HandleHttpRequest",
             "penaltyDuration" : "30 sec",
             "position" : {
-              "x" : -424.0,
-              "y" : -224.0
+              "x" : -240.0,
+              "y" : -272.0
             },
             "properties" : {
               "multipart-request-max-size" : "1 MB",
               "parameters-to-attributes" : "taskId",
               "Allow POST" : "true",
+              "Hostname" : "0.0.0.0",
               "Default URL Character Set" : "UTF-8",
               "Allow DELETE" : "true",
               "Request Header Maximum Size" : "8 KB",
@@ -174,10 +413,10 @@
               "HTTP Context Map" : "52fc0b22-65c2-3f63-9927-96531f4fa112",
               "multipart-read-buffer-size" : "512 KB",
               "Allow OPTIONS" : "false",
-              "Allowed Paths" : "transform/location/granite",
+              "Allowed Paths" : "/transform/location/granite",
               "Allow GET" : "true",
               "Allow HEAD" : "false",
-              "Listening Port" : "8081",
+              "Listening Port" : "10001",
               "Client Authentication" : "No Authentication",
               "Allow PUT" : "true"
             },
